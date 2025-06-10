@@ -6,6 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 export default defineConfig({
   plugins: [vue(), vueDevTools()],
+  base:'/site-gallery/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
